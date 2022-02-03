@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "N11",
+        "teacher": "Baxtiyor",
+        "course": "Foundation"
+    },
+    {
+        "id": 2,
+        "name": "N12",
+        "teacher": "Baxtiyor",
+        "course": "Foundation"
+    }
+]

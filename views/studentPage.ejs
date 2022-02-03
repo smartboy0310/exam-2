@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href= "./assets/css/adminPage.css">
+</head>
+<body>
+   <h2 class="admin">
+      <%= username %> talaba 
+   </h2>
+   <div class="home">
+      <div class="site-bar">
+         <ul class="site-bar__list">
+            <li class="site-bar__item">
+               <a href="student/group" class="site-bar-link">Guruhlar</a>
+            </li>
+         </ul>
+         <a href="/logout" class="btn-logOut">Log Out</a>
+      </div>
+      <div class="info">
+         <h1>Guruhlar</h1>
+         <% for(let i of group) {%>
+         <h2>
+            <strong>Guruh nomi:</strong> <%= i.name %> 
+             
+          </h2>
+          <h2> <strong>Guruh kurs:</strong> <%= i.course %>
+          </h2>
+          <%}%>
+      </div>
+      </div>
+   </body>
+   </html>

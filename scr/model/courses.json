@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Foundation",
+        "price": "900"
+    },
+    {
+        "id": 2,
+        "name": "UI/UX",
+        "price": "1200"
+    }
+]

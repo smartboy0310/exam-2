@@ -1,0 +1,47 @@
+.home{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 1000px;
+   margin: 0 auto;
+}
+
+.site-bar__list {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+a {
+   text-decoration: none;
+   color: #000;
+   font-size: 24px;
+}
+.site-bar__item {
+   margin-bottom: 15px;
+}
+.site-bar__item:hover {
+  text-decoration: underline;
+}
+
+.render-section {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.cours-form {
+   display: flex;
+   flex-direction: column;
+}
+.cours-input{
+   margin-bottom: 15px;
+}
+.render-info {
+   display: flex;
+}
+
+.cours-id,
+.cours-name,
+.cours-price {
+   display: flex;
+   flex-direction: column;
+}

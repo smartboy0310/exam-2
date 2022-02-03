@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href= "./assets/css/adminPage.css">
+</head>
+<body>
+   <h2 class="admin">
+      <%= username%> administrator
+   </h2>
+   <div class="home">
+      <div class="site-bar">
+         <ul class="site-bar__list">
+            <li class="site-bar__item">
+               <a href="admin/courses" class="site-bar-link">Kurslar</a>
+            </li>
+            <li class="site-bar__item">
+               <a href="admin/group" class="site-bar-link">Guruhlar</a>
+            </li>
+            <li class="site-bar__item">
+               <a href="admin/teacher" class="site-bar-link">O'qituvchilar</a>
+            </li>
+            <li class="site-bar__item">
+               <a href="admin/student" class="site-bar-link">Talabalar</a>
+            </li>
+         </ul>
+         <a href="/logout" class="btn-logOut">Log Out</a>
+      </div>
+      <div class="info">
+         <div class="control">
+            <form class="form" action="/regteacher" method="post" enctype="application/x-www-form-urlencoded">
+               <h2>Add Teachers</h2>
+               <input class="input" type="text" placeholder="Name" name="username">
+               <input class="input" type="password" placeholder="Password" name="password">
+               <input class="input" type="tel" placeholder="Tel" name="tel">
+               <button class="btn">Qo'shish</button>
+            </form>
+            
+            <form class="form" action="/regcourse" method="post" enctype="application/x-www-form-urlencoded">
+               <h2>Add Courses</h2>
+               <input class="input" type="text" placeholder="Course" name="name">
+               <input class="input" type="text" placeholder="Price" name="price">
+               
+               <button class="btn">Qo'shish</button>
+            </form>
+            
+            <form class="form" action="/reggroup" method="post" enctype="application/x-www-form-urlencoded">
+               <h2>Add Grups</h2>
+               <input class="input" type="text" placeholder="Grups" name="name">
+               <select class="input" name="teacher">
+                  <% for(let j of teachers) {%>
+                     <option value=<%= j.username %>><%= j.username %></option>
+                     <%}%>
+                  </select>
+                  <select class="input" name="course">
+                     <% for(let j of courses) {%>
+                        <option value=<%= j.name %>><%= j.name %></option>
+                        <%}%>
+                     </select>
+                     <button class="btn">Qo'shish</button>
+                  </form> 
+                  
+                  <form class="form" action="/regstudent" method="post" enctype="application/x-www-form-urlencoded">
+                     <h2>Add Student</h2>
+                     <input class="input" type="text" placeholder="Name" name="username">
+                     <input class="input" type="password" placeholder="Password" name="password">
+                     <select class="input" name="group">
+                        <% for(let i of group) {%>
+                           <option value=<%= i.name %>><%= i.name %></option>
+                           <%}%>
+                        </select>
+                        <input class="input" type="tel" placeholder="Tel" name="tel">
+                        <button class="btn">Qo'shish</button>
+                     </form>
+                  </div>
+               </div>
+            </body>
+            </html>

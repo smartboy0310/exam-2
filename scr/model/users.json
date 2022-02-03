@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "username": "Azamat",
+        "password": "12345",
+        "role": "admin"
+    },
+    {
+        "id": 2,
+        "username": "Baxtiyor",
+        "password": "12345",
+        "role": "teacher",
+        "tel": "998712442269"
+    },
+    {
+        "id": 3,
+        "username": "Azamat",
+        "password": "12345",
+        "role": "teacher",
+        "tel": "998712442269"
+    },
+    
+    {
+        "id": 6,
+        "username": "Diyorbek",
+        "password": "12345",
+        "role": "student",
+        "group": "N11",
+        "tel": "998712442269"
+    },
+    {
+        "id": 7,
+        "username": "Azamat",
+        "password": "12345",
+        "role": "student",
+        "group": "N12",
+        "tel": "+998712442269"
+    }
+]
